@@ -1,0 +1,83 @@
+:root {
+ --White: hsl(0, 0%, 100%); 
+ --Lightgray: hsl(212, 45%, 89%);
+ --Grayishblue: rgb(123, 135, 157);
+ --Darkblue: hsl(218, 44%, 22%)
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    margin:0; 
+    padding: 0; 
+    height: calc(100vh - 1px); 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: var(--Lightgray);
+}
+
+.main-container {
+    display: flex;
+    flex-direction:column; 
+    background-color: white; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 20px; 
+    width: 340px; 
+    box-shadow: 5px 30px 20px  rgba(123,135,157,.15);
+    margin-bottom: 2rem;
+}
+
+img {
+    width: 285px; 
+    height: 280px; 
+    border-radius: 10px;
+    margin-top: 15px; 
+}
+
+.main-text-area {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;  
+}
+.text-area-one {
+    width: 17em; 
+    line-height: 1.65em; 
+    margin-top: 0px; 
+}
+
+.text-area-two {
+    width: 16em; 
+    align-items: center;
+    margin-top: -15px; 
+    margin-bottom: 25px; 
+}
+
+h2 {
+    color: var(--Darkblue); 
+    text-align: center;  
+    font-size: 1.4em; 
+}
+
+p {
+    font-size: 15px; 
+    color: var(--Grayishblue); 
+    text-align:center; 
+}
+
+.attribution {
+    font-size: 14px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+@media screen and (min-height: 500px) {
+    .main-container {
+      width: 320px;  
+    }
+}
